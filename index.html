@@ -6,6 +6,7 @@
   <title>HUNGRY PEOPLE RESTAURANT</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -16,17 +17,24 @@
   <section class="header__section">
     <div class="container">
       <div class="header">
-        <div class="header__nav">
-            <a href="#about" class="header__nav-item">ABOUT</a>
-            <a href="#team" class="header__nav-item">TEAM</a>
-            <a href="#booking" class="header__nav-item">BOOKING</a>
-            <a href="#menu" class="header__nav-item">MENU</a>
-            <img class="header__logo" src="images/logo.svg" alt="">
-            <a href="#galerie" class="header__nav-item">GALERIE</a>
-            <a href="#events" class="header__nav-item">EVENTS</a>
-            <a href="#contact" class="header__nav-item">CONTACT</a>
-            <a href="#location" class="header__nav-item">OUR LOCATION</a>
-        </div>
+        <nav class="head__nav">
+          <ul class="header__nav">
+            <li><a href="#about" class="header__nav-item">ABOUT</a></li>
+            <li><a href="#team" class="header__nav-item">TEAM</a></li>
+            <li><a href="#booking" class="header__nav-item">BOOKING</a></li>
+            <li><a href="#menu" class="header__nav-item">MENU</a></li>
+          </ul>
+          <img class="header__logo" src="images/logo.svg" alt="">
+          <button class="burger" onclick="toggleClass()">
+            &#9776;
+          </button>
+          <ul class="header__nav qqe">
+            <li><a href="#galerie" class="header__nav-item">GALERIE</a></li>
+            <li><a href="#events" class="header__nav-item">EVENTS</a></li>
+            <li><a href="#contact" class="header__nav-item">CONTACT</a></li>
+            <li><a href="#location" class="header__nav-item">OUR LOCATION</a></li>
+          </ul>
+        </nav>
         <div class="header__main">
           <div class="header__main-left">
             <div class="header__main-left__dates">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</div>
@@ -198,21 +206,26 @@
             <div class="reservation__input-item">
               <input type="text" class="reservation__input-item" placeholder="People">
             <div class="reservation__dropdown">
-              <span class="dropdown__arrow">
-                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6.12193 8.25L0.809435 2.9375C0.627143 2.75521 0.535997 2.53385 0.535997 2.27344C0.535997 2.01302 0.627143 1.79167 0.809435 1.60938L1.70787 0.75C1.89016 0.567708 2.11152 0.476562 2.37193 0.476562C2.63235 0.476562 2.85371 0.567708 3.036 0.75L6.786 4.5L10.536 0.75C10.7183 0.567708 10.9396 0.476562 11.2001 0.476562C11.4605 0.476562 11.6818 0.567708 11.8641 0.75L12.7626 1.60938C12.9449 1.79167 13.036 2.01302 13.036 2.27344C13.036 2.53385 12.9449 2.75521 12.7626 2.9375L7.45006 8.25C7.26777 8.43229 7.04641 8.52344 6.786 8.52344C6.52558 8.52344 6.30423 8.43229 6.12193 8.25Z"
-                  fill="#333333" fill-opacity="0.5" />
-              </svg>
-                <div class="dropdown__items">
-                  <span class="dropdown__item"><a class="dropdown__item-text"  href="#">Sub-1</a></span>
-                  <span class="dropdown__item"><a class="dropdown__item-text"  href="#">Sub-2</a></span>
-                  <span class="dropdown__item"><a class="dropdown__item-text"  href="#">Sub-3</a></span>
+              <div class="dropdown">
+                <div class="projects">
+                  <button><svg class="pre" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.12193 8.25L0.809435 2.9375C0.627143 2.75521 0.535997 2.53385 0.535997 2.27344C0.535997 2.01302 0.627143 1.79167 0.809435 1.60938L1.70787 0.75C1.89016 0.567708 2.11152 0.476562 2.37193 0.476562C2.63235 0.476562 2.85371 0.567708 3.036 0.75L6.786 4.5L10.536 0.75C10.7183 0.567708 10.9396 0.476562 11.2001 0.476562C11.4605 0.476562 11.6818 0.567708 11.8641 0.75L12.7626 1.60938C12.9449 1.79167 13.036 2.01302 13.036 2.27344C13.036 2.53385 12.9449 2.75521 12.7626 2.9375L7.45006 8.25C7.26777 8.43229 7.04641 8.52344 6.786 8.52344C6.52558 8.52344 6.30423 8.43229 6.12193 8.25Z"
+                        fill="#333333" fill-opacity="0.5" />
+                    </svg></button>
+                  <ul>
+                    <li><a href="#">целковый</a></li>
+                    <li><a href="#">полушка</a></li>
+                    <li><a href="#">четвертушка</a></li>
+                    <li><a href="#">осьмушка</a></li>
+                  </ul>
                 </div>
-              </span>
+
+              </div>  
+            </div>
+            
               
-            </div>
-            </div>
+          </div>
             <div class="reservation__input-item">
               <input type="text" class="reservation__input-item" placeholder="Date (mm/dd)">
               
@@ -220,18 +233,25 @@
             <div class="reservation__input-item">
               <input type="text" class="reservation__input-item" placeholder="Time">
               <div class="reservation__dropdown">
-                <span class="dropdown__arrow">
-                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.12193 8.25L0.809435 2.9375C0.627143 2.75521 0.535997 2.53385 0.535997 2.27344C0.535997 2.01302 0.627143 1.79167 0.809435 1.60938L1.70787 0.75C1.89016 0.567708 2.11152 0.476562 2.37193 0.476562C2.63235 0.476562 2.85371 0.567708 3.036 0.75L6.786 4.5L10.536 0.75C10.7183 0.567708 10.9396 0.476562 11.2001 0.476562C11.4605 0.476562 11.6818 0.567708 11.8641 0.75L12.7626 1.60938C12.9449 1.79167 13.036 2.01302 13.036 2.27344C13.036 2.53385 12.9449 2.75521 12.7626 2.9375L7.45006 8.25C7.26777 8.43229 7.04641 8.52344 6.786 8.52344C6.52558 8.52344 6.30423 8.43229 6.12193 8.25Z"
-                      fill="#333333" fill-opacity="0.5" />
-                  </svg>
-                  <div class="dropdown__items">
-                    <span class="dropdown__item"><a class="dropdown__item-text" href="#">Sub-1</a></span>
-                    <span class="dropdown__item"><a class="dropdown__item-text" href="#">Sub-2</a></span>
-                    <span class="dropdown__item"><a class="dropdown__item-text" href="#">Sub-3</a></span>
+                <div class="dropdown__arrow">
+                  
+                  <div class="dropdown">
+                    <div class="projects">
+                      <button><svg class="pre" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.12193 8.25L0.809435 2.9375C0.627143 2.75521 0.535997 2.53385 0.535997 2.27344C0.535997 2.01302 0.627143 1.79167 0.809435 1.60938L1.70787 0.75C1.89016 0.567708 2.11152 0.476562 2.37193 0.476562C2.63235 0.476562 2.85371 0.567708 3.036 0.75L6.786 4.5L10.536 0.75C10.7183 0.567708 10.9396 0.476562 11.2001 0.476562C11.4605 0.476562 11.6818 0.567708 11.8641 0.75L12.7626 1.60938C12.9449 1.79167 13.036 2.01302 13.036 2.27344C13.036 2.53385 12.9449 2.75521 12.7626 2.9375L7.45006 8.25C7.26777 8.43229 7.04641 8.52344 6.786 8.52344C6.52558 8.52344 6.30423 8.43229 6.12193 8.25Z"
+                          fill="#333333" fill-opacity="0.5" />
+                      </svg></button>
+                      <ul>
+                        <li><a href="#">пудовичок</a></li>
+                        <li><a href="#">медячок</a></li>
+                        <li><a href="#">серебрячок</a></li>
+                        <li><a href="#">золотничок</a></li>
+                      </ul>
+                    </div>
+                    
                   </div>
-                </span>
+                </div>
               
               </div>
             </div>
@@ -1173,21 +1193,21 @@
           </div>
         <div class="contact__input">
           <div class="contact__input-item">
-            <input type="text" class="contact__input-item" placeholder="Nume">
+            <input type="text" class="contact__input-item__text" placeholder="Name">
           </div>
           <div class="contact__input-item">
-            <input type="text" class="contact__input-item" placeholder="Email">
+            <input type="text" class="contact__input-item__text" placeholder="Email">
           </div>
           <div class="contact__input-item">
-            <input type="text" class="contact__input-item" placeholder="Phone">
+            <input type="text" class="contact__input-item__text" placeholder="Phone">
           </div>
           <div class="contact__input-item input-big">
-            <textarea class="contact__input-item" placeholder="Message"></textarea>
+            <textarea class="contact__input-item contact__input-textarea" maxlength="790" placeholder="Message"></textarea>
           </div>
         </div>
           <div class="contact__footer">
             <div class="contact__info">
-              <a href="#">
+              <a href="https://goo.gl/maps/9FdZ7jVwLKUsS9Xj6">
                 <div class="contact__info-item">
                               <svg class="contact__info-item__img" id="Layer_1" fill="rgba(232, 195, 0, 1)" enable-background="new 0 0 512 512"
                                 height="16" viewBox="0 0 512 512" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -1198,7 +1218,7 @@
                               </svg>
                               5th London Boulevard, U.K.</div>
               </a>
-              <a href="#">
+              <a href="tel:+40 729 131 637">
                                                         <div class="contact__info-item">
                                                           <svg class="contact__info-item__img" width="16" height="16" fill="rgba(232, 195, 0, 1)" version="1.1" id="Capa_1"
                                                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384"
@@ -1247,7 +1267,7 @@
                                                           +40 729 131 637/+40 726 458 782
                                                         </div>
               </a>
-              <a href="#">
+              <a href="mailto:office@mindblister.com">
                               <div class="contact__info-item">
                                 <svg class="contact__info-item__img" width="16" height="16" fill="rgba(232, 195, 0, 1)" version="1.1" id="Layer_1"
                                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"

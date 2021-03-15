@@ -1,5 +1,7 @@
 
 $(document).ready(function () {
+
+
   $('a[href^="#"]').click(function () { 
     let anchor = $(this).attr('href');  
     $('html, body').animate({           
@@ -31,3 +33,9 @@ $(document).ready(function () {
 
 });
 
+function toggleClass() {
+  let menu = document.querySelector('.header__nav');
+  let menu2 = document.querySelector('.qqe');
+  menu.classList.toggle('toggle__class')
+  menu2.classList.toggle('toggle__class')
+};
