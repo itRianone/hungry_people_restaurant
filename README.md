@@ -11,8 +11,8 @@ form(dropdown menu) + slider(2 sliders at all)
 
 site gallery
 
-![image](https://user-images.githubusercontent.com/63122696/111367476-d539e880-86a5-11eb-98e0-0df186684e43.png)
+![image](https://user-images.githubusercontent.com/63122696/111367757-1af6b100-86a6-11eb-9590-f40f1320e2c0.png)
 
 footer
 
-![image](https://user-images.githubusercontent.com/63122696/111367757-1af6b100-86a6-11eb-9590-f40f1320e2c0.png)
+![image](https://user-images.githubusercontent.com/63122696/111367476-d539e880-86a5-11eb-98e0-0df186684e43.png)
