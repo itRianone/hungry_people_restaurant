@@ -1,5 +1,5 @@
 # hungry_people_restaurant
-single page website, restaurant and food topic 
+single page website, restaurant and food topic, only for laptops and desktops for now
 
 header
 
