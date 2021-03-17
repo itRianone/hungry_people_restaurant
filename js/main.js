@@ -13,7 +13,7 @@ $(document).ready(function () {
     {
       arrows: false,
       slidesToShow: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2500,
       dots: true,
     }
@@ -21,8 +21,8 @@ $(document).ready(function () {
     
     $('.specialties').slick(
       {
-        arrows: false,
         slidesToShow: 1,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 2500,
         dots: true,
@@ -38,4 +38,9 @@ function toggleClass() {
   let menu2 = document.querySelector('.qqe');
   menu.classList.toggle('toggle__class')
   menu2.classList.toggle('toggle__class')
+};
+
+function watchPopup(id) {
+  document.querySelector('.team-popup' + id).classList.toggle('active')
+  // document.querySelectorAll('.specialties__popup').classList.toggle('active')
 };

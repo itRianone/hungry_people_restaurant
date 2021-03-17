@@ -281,15 +281,15 @@ textarea::-webkit-scrollbar-thumb {
 .about-us{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px;
 }
 .about__text-block{
+  margin-right: 80px;
+  max-width: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin-right: 80px;
 }
 .about-us__title{
   font-family: 'Banny Round';
@@ -337,9 +337,15 @@ textarea::-webkit-scrollbar-thumb {
   border: 20px solid #E8C300;
   border-radius: 5px;
   background-color: transparent;
-  right: -30%;
+  right: -22%;
   top: 25%;
   z-index: 10;
+}
+.visible{
+  display: block;
+}
+.our-team{
+  /* position: relative; */
 }
 .our-team__section{
   background-color: rgba(0, 0, 0, 0.6);
@@ -359,7 +365,8 @@ textarea::-webkit-scrollbar-thumb {
   flex-direction: column;
   order: 2;
   justify-content: center;
-  margin-left: 72px;
+  margin-left: 80px;
+  max-width: 600px;
 }
 .team-title__inner{
   display: flex;
@@ -389,6 +396,19 @@ textarea::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   margin-bottom: 15px;
 }
+.team__popup,
+.specialties__popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+.team__popup-title,
+.team__popup-text{
+  color: white;
+  font-size: 15px;
+}
+
 .our-team__title-slider::after{
   position: absolute;
   content: '';
@@ -482,7 +502,7 @@ textarea::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   max-width: 565px;
-  margin-right: 70px;
+  margin-right: 80px;
 }
 .reservation__input{
   display: flex;
@@ -575,7 +595,7 @@ textarea::-webkit-scrollbar-thumb {
   border: 20px solid #E8C300;
   border-radius: 5px;
   background-color: transparent;
-  right: -30%;
+  right: -22%;
   top: 25%;
   z-index: 10;
 }
@@ -611,6 +631,7 @@ textarea::-webkit-scrollbar-thumb {
   flex-direction: column;
   order: 2;
   justify-content: center;
+  max-width: 600px;
   margin-left: 72px;
 }
 .specialties-title__inner{
@@ -896,6 +917,7 @@ textarea::-webkit-scrollbar-thumb {
   transition: all 0.15s ease;
 }
 .menu__dishes{
+  flex-direction: column;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -970,7 +992,7 @@ textarea::-webkit-scrollbar-thumb {
   border: 20px solid #E8C300;
   border-radius: 5px;
   background-color: transparent;
-  left: -30%;
+  left: -22%;
   top: 25%;
   z-index: 10;
 }
@@ -983,7 +1005,7 @@ textarea::-webkit-scrollbar-thumb {
   border: 20px solid #E8C300;
   border-radius: 5px;
   background-color: transparent;
-  right: -30%;
+  right: -22%;
   top: 25%;
   z-index: 10;
 }
@@ -1189,6 +1211,37 @@ textarea::-webkit-scrollbar-thumb {
   transform: translateY(4.5px);
 }
 
+@media(max-width:1331px) {
+  .about-us {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .events{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .reservation__inner{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .our-team__text,
+  .our-team__descr,
+  .specialties__descr, 
+  .specialties__text{
+    display: none;
+  }
+  .team-slider__inner,
+  .specialties-slider__inner{
+    flex-direction: column-reverse;
+  }
+  .team__popup.active,
+  .specialties__popup.active{
+    display: block;
+    top: -2%;
+    left: 30%;
+  }
+}
+
 @media(max-width:800px){
   .header__nav {
     display: none;
@@ -1210,15 +1263,16 @@ textarea::-webkit-scrollbar-thumb {
     right: 16%;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
   }
   .qqe.toggle__class{
-  position: fixed;
-  display: block;
-  top: 90px;
-  left: 31%;
+    position: absolute;
+    display: block;
+    top: 90px;
+    left: 31%;
   }
   .header__logo{
     order:-1;
   }
 }
+
