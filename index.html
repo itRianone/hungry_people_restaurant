@@ -123,9 +123,9 @@
         
         <div class="team-slider__inner">
           <div class="our-team__text-block">
-            <div class="our-team__title-slider">
-              MASTER CHEF
-            </div>
+            <button onclick="switchTeamPopup('1')"><div class="our-team__title-slider">
+              master chef
+            </div></button>
             <span class="our-team__descr visible">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
             </span>
@@ -140,19 +140,11 @@
           <div class="our-team__image">
             <a href=""><img class="our-team__image-card" src="images/our-team-img.png" alt=""></a>
           </div>
-          <div class="team__popup teamqe">
-            <div class="team__popup-overlay"></div>
-            <div class="team__popup-content">
-              <div class="team__popup-close">&times;</div>
-              <h1 class="team__popup-title">QQEAQWAS</h1>
-              <p class="team__popup-text">qqqweqfrzxfvx</p>
-            </div>
-          </div>
         </div>
 
         <div class="team-slider__inner">
           <div class="our-team__text-block">
-            <button onclick="watchPopup('1');"><div class="our-team__title-slider">
+            <button onclick="switchTeamPopup('2');"><div class="our-team__title-slider">
               sommelier
             </div><button>
             <span class="our-team__descr">
@@ -169,32 +161,14 @@
           <div class="our-team__image">
             <img class="our-team__image-card" src="images/banditto-3.png" alt="">
           </div>
-          <div class="team__popup team-popup1">
-            <div class="team__popup-overlay"></div>
-            <div class="team__popup-content">
-              <div class="team__popup-close">&times;</div>
-              <div class="our-team__image">
-                <img class="our-team__image-card" src="images/banditto-3.png" alt="">
-              </div>
-              <span class="team__popup-title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
-              </span>
-              <span class="team__popup-text">
-                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim
-                sed
-                ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
-                convallis
-                pharetra. Nulla facilisis semper laoreet.
-              </span>
-            </div>
-          </div>
+
         </div>
 
         <div class="team-slider__inner">
           <div class="our-team__text-block">
-            <div class="our-team__title-slider">
+            <button onclick="switchTeamPopup('3');"><div class="our-team__title-slider">
               sous chef
-            </div>
+            </div></button>
             <span class="our-team__descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
             </span>
@@ -207,20 +181,71 @@
             </span>
           </div>
           <div class="our-team__image">
-            <img class="our-team__image-card" src="images/а ты.jpg" alt="">
-          </div>
-          <div class="team__popup">
-            <div class="team__popup-overlay"></div>
-            <div class="team__popup-content">
-              <div class="team__popup-close">&times;</div>
-              <h1 class="team__popup-title">QQEAQWAS</h1>
-              <p class="team__popup-text">qqqweqfrzxfvx</p>
-            </div>
+            <img class="our-team__image-card" src="images/а_ты.jpg" alt="">
           </div>
         </div>
         
       </div>
-    </div>
+      <div class="team__popup team-popup1">
+        <div class="team__popup-overlay"></div>
+        <div class="team__popup-content">
+          <div class="team__popup-close" onclick="switchTeamPopup('1');">&times;</div>
+          <div class="our-team__image">
+            <img class="our-team__image-card" src="images/our-team-img.png" alt="">
+          </div>
+          <span class="team__popup-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+          </span>
+          <span class="team__popup-text">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+            enim
+            sed
+            ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+            convallis
+            pharetra. Nulla facilisis semper laoreet.
+          </span>
+        </div>
+      </div>
+      <div class="team__popup team-popup2">
+        <div class="team__popup-overlay"></div>
+        <div class="team__popup-content">
+          <div class="team__popup-close" onclick="switchTeamPopup('2');">&times;</div>
+          <div class="our-team__image">
+            <img class="our-team__image-card" src="images/banditto-3.png" alt="">
+          </div>
+          <span class="team__popup-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+          </span>
+          <span class="team__popup-text">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+            enim
+            sed
+            ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+            convallis
+            pharetra. Nulla facilisis semper laoreet.
+          </span>
+        </div>
+      </div>
+      <div class="team__popup team-popup3">
+        <div class="team__popup-overlay"></div>
+        <div class="team__popup-content">
+          <div class="team__popup-close" onclick="switchTeamPopup('3');">&times;</div>
+          <div class="our-team__image">
+            <img class="our-team__image-card" src="images/а_ты.jpg" alt="">
+          </div>
+          <span class="team__popup-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+          </span>
+          <span class="team__popup-text">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+            enim
+            sed
+            ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+            convallis
+            pharetra. Nulla facilisis semper laoreet.
+          </span>
+        </div>
+      </div>
   </section>
   
   <section id="booking" class="reservation__section">
@@ -315,39 +340,7 @@
   
         <div class="specialties-slider__inner">
           <div class="specialties__text-block">
-            <a href="#"><div class="specialties__title-slider">
-              chocolate pancakes
-            </div></a>
-            <span class="specialties__descr">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-              magna.
-            </span>
-            <span class="specialties__text">
-              Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
-              dictum, enim
-              sed
-              ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat
-              diam
-              convallis
-              pharetra. Nulla facilisis semper laoreet.
-            </span>
-          </div>
-          <div class="specialties__image">
-            <img class="specialties__image-card" src="images/specialties.png" alt="">
-          </div>
-          <div class="specialties__popup">
-            <div class="specialties__popup-overlay"></div>
-            <div class="specialties__popup-content">
-              <div class="specialties__popup-close">&times;</div>
-              <h1 class="specialties__popup-title">QQEAQWAS</h1>
-              <p class="specialties__popup-text">qqqweqfrzxfvx</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="specialties-slider__inner">
-          <div class="specialties__text-block">
-            <button onclick=""><div class="specialties__title-slider">
+            <button onclick="switchSpecPopup('1')"><div class="specialties__title-slider">
               chocolate pancakes
             </div></button>
             <span class="specialties__descr">
@@ -367,21 +360,14 @@
           <div class="specialties__image">
             <img class="specialties__image-card" src="images/specialties.png" alt="">
           </div>
-          <div class="specialties__popup">
-            <div class="specialties__popup-overlay"></div>
-            <div class="specialties__popup-content">
-              <div class="specialties__popup-close">&times;</div>
-              <h1 class="specialties__popup-title">QQEAQWAS</h1>
-              <p class="specialties__popup-text">qqqweqfrzxfvx</p>
-            </div>
-          </div>
+          
         </div>
   
         <div class="specialties-slider__inner">
           <div class="specialties__text-block">
-            <div class="specialties__title-slider">
+            <button onclick="switchSpecPopup('2')"><div class="specialties__title-slider">
               chocolate pancakes
-            </div>
+            </div></button>
             <span class="specialties__descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
               magna.
@@ -399,18 +385,97 @@
           <div class="specialties__image">
             <img class="specialties__image-card" src="images/specialties.png" alt="">
           </div>
-          <div class="specialties__popup">
-            <div class="specialties__popup-overlay"></div>
-            <div class="specialties__popup-content">
-              <div class="specialties__popup-close">&times;</div>
-              <h1 class="specialties__popup-title">QQEAQWAS</h1>
-              <p class="specialties__popup-text">qqqweqfrzxfvx</p>
-            </div>
+          
+        </div>
+  
+        <div class="specialties-slider__inner">
+          <div class="specialties__text-block">
+            <button onclick="switchSpecPopup('3')"><div class="specialties__title-slider">
+              chocolate pancakes
+            </div></button>
+            <span class="specialties__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+              magna.
+            </span>
+            <span class="specialties__text">
+              Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+              dictum, enim
+              sed
+              ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat
+              diam
+              convallis
+              pharetra. Nulla facilisis semper laoreet.
+            </span>
           </div>
+          <div class="specialties__image">
+            <img class="specialties__image-card" src="images/specialties.png" alt="">
+          </div>
+          
         </div>
   
       </div>
     </div>
+
+          <div class="specialties__popup specialties-popup1">
+            <div class="specialties__popup-overlay"></div>
+            <div class="specialties__popup-content">
+              <div class="specialties__popup-close" onclick="switchTeamPopup('1');">&times;</div>
+              <div class="specialties__image">
+                <img class="specialties__image-card" src="images/our-team-img.png" alt="">
+              </div>
+              <span class="specialties__popup-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+              </span>
+              <span class="specialties__popup-text">
+                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+                enim
+                sed
+                ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+                convallis
+                pharetra. Nulla facilisis semper laoreet.
+              </span>
+            </div>
+          </div>
+          <div class="specialties__popup specialties-popup2">
+            <div class="specialties__popup-overlay"></div>
+            <div class="specialties__popup-content">
+              <div class="specialties__popup-close" onclick="switchTeamPopup('2');">&times;</div>
+              <div class="specialties__image">
+                <img class="specialties__image-card" src="images/banditto-3.png" alt="">
+              </div>
+              <span class="specialties__popup-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+              </span>
+              <span class="specialties__popup-text">
+                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+                enim
+                sed
+                ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+                convallis
+                pharetra. Nulla facilisis semper laoreet.
+              </span>
+            </div>
+          </div>
+          <div class="specialties__popup team-popup3">
+            <div class="specialties__popup-overlay"></div>
+            <div class="specialties__popup-content">
+              <div class="specialties__popup-close" onclick="switchTeamPopup('3');">&times;</div>
+              <div class="specialties__image">
+                <img class="specialties__image-card" src="images/а_ты.jpg" alt="">
+              </div>
+              <span class="specialties__popup-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+              </span>
+              <span class="specialties__popup-text">
+                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+                enim
+                sed
+                ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+                convallis
+                pharetra. Nulla facilisis semper laoreet.
+              </span>
+            </div>
+          </div>
   </section>
 
   <section id="menu" class="menu__section">
