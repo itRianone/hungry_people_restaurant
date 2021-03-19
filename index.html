@@ -123,7 +123,10 @@
         
         <div class="team-slider__inner">
           <div class="our-team__text-block">
-            <button onclick="switchTeamPopup('1')"><div class="our-team__title-slider">
+            <div class="our-team__title-slider">
+              master chef
+            </div>
+            <button class="popup__btn" onclick="switchTeamPopup('1')"><div class="our-team__title-slider popup__title">
               master chef
             </div></button>
             <span class="our-team__descr visible">
@@ -144,7 +147,10 @@
 
         <div class="team-slider__inner">
           <div class="our-team__text-block">
-            <button onclick="switchTeamPopup('2');"><div class="our-team__title-slider">
+            <div class="our-team__title-slider">
+              master chef
+            </div>
+            <button class="popup__btn" onclick="switchTeamPopup('2');"><div class="our-team__title-slider popup__title">
               sommelier
             </div><button>
             <span class="our-team__descr">
@@ -166,7 +172,10 @@
 
         <div class="team-slider__inner">
           <div class="our-team__text-block">
-            <button onclick="switchTeamPopup('3');"><div class="our-team__title-slider">
+            <div class="our-team__title-slider">
+              sous chef
+            </div>
+            <button class="popup__btn" onclick="switchTeamPopup('3');"><div class="our-team__title-slider popup__title">
               sous chef
             </div></button>
             <span class="our-team__descr">
@@ -340,7 +349,10 @@
   
         <div class="specialties-slider__inner">
           <div class="specialties__text-block">
-            <button onclick="switchSpecPopup('1')"><div class="specialties__title-slider">
+            <div class="specialties__title-slider">
+              chocolate pancakes
+            </div>
+            <button class="popup__btn" onclick="switchSpecPopup('1')"><div class="specialties__title-slider popup__title">
               chocolate pancakes
             </div></button>
             <span class="specialties__descr">
@@ -365,7 +377,10 @@
   
         <div class="specialties-slider__inner">
           <div class="specialties__text-block">
-            <button onclick="switchSpecPopup('2')"><div class="specialties__title-slider">
+            <div class="specialties__title-slider">
+              chocolate pancakes
+            </div>
+            <button class="popup__btn" onclick="switchSpecPopup('2')"><div class="specialties__title-slider popup__title">
               chocolate pancakes
             </div></button>
             <span class="specialties__descr">
@@ -390,7 +405,10 @@
   
         <div class="specialties-slider__inner">
           <div class="specialties__text-block">
-            <button onclick="switchSpecPopup('3')"><div class="specialties__title-slider">
+            <div class="specialties__title-slider">
+              chocolate pancakes
+            </div>
+            <button class="popup__btn" onclick="switchSpecPopup('3')"><div class="specialties__title-slider popup__title">
               chocolate pancakes
             </div></button>
             <span class="specialties__descr">
@@ -419,9 +437,9 @@
           <div class="specialties__popup specialties-popup1">
             <div class="specialties__popup-overlay"></div>
             <div class="specialties__popup-content">
-              <div class="specialties__popup-close" onclick="switchTeamPopup('1');">&times;</div>
+              <div class="specialties__popup-close" onclick="switchSpecPopup('1');">&times;</div>
               <div class="specialties__image">
-                <img class="specialties__image-card" src="images/our-team-img.png" alt="">
+                <img class="specialties__image-card" src="images/favicon.ico" alt="">
               </div>
               <span class="specialties__popup-title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
@@ -439,7 +457,7 @@
           <div class="specialties__popup specialties-popup2">
             <div class="specialties__popup-overlay"></div>
             <div class="specialties__popup-content">
-              <div class="specialties__popup-close" onclick="switchTeamPopup('2');">&times;</div>
+              <div class="specialties__popup-close" onclick="switchSpecPopup('2');">&times;</div>
               <div class="specialties__image">
                 <img class="specialties__image-card" src="images/banditto-3.png" alt="">
               </div>
@@ -456,10 +474,10 @@
               </span>
             </div>
           </div>
-          <div class="specialties__popup team-popup3">
+          <div class="specialties__popup specialties-popup3">
             <div class="specialties__popup-overlay"></div>
             <div class="specialties__popup-content">
-              <div class="specialties__popup-close" onclick="switchTeamPopup('3');">&times;</div>
+              <div class="specialties__popup-close" onclick="switchSpecPopup('3');">&times;</div>
               <div class="specialties__image">
                 <img class="specialties__image-card" src="images/а_ты.jpg" alt="">
               </div>

@@ -46,6 +46,6 @@ function switchTeamPopup(id) {
 };
 
 function switchSpecPopup(id) {
-  document.querySelector('.team-popup' + id).classList.toggle('active')
+  document.querySelector('.specialties-popup' + id).classList.toggle('active')
   // document.querySelectorAll('.specialties__popup').classList.toggle('active')
 };
