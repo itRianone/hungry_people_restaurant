@@ -34,10 +34,17 @@ $(document).ready(function () {
 });
 
 function toggleClass() {
-  let menu = document.querySelector('.header__nav');
-  let menu2 = document.querySelector('.qqe');
-  menu.classList.toggle('toggle__class')
-  menu2.classList.toggle('toggle__class')
+  let navigation = document.querySelectorAll('.header__nav');
+  console.log(menu);
+  //let menu2 = document.querySelector('.qqe');
+  let navBar = document.querySelector('.head__nav');
+  for (let navItem of navigation) {
+    
+    navItem.classList.toggle('toggle__class');
+
+  }
+  //menu.classList.toggle('toggle__class');
+  //menu2.classList.toggle('toggle__class');
 };
 
 function switchTeamPopup(id) {
