@@ -35,9 +35,9 @@ $(document).ready(function () {
 
 function toggleClass() {
   let navigation = document.querySelectorAll('.header__nav');
-  console.log(menu);
+  //console.log(menu);
   //let menu2 = document.querySelector('.qqe');
-  let navBar = document.querySelector('.head__nav');
+  //let navBar = document.querySelector('.head__nav');
   for (let navItem of navigation) {
     
     navItem.classList.toggle('toggle__class');
@@ -46,6 +46,7 @@ function toggleClass() {
   //menu.classList.toggle('toggle__class');
   //menu2.classList.toggle('toggle__class');
 };
+
 
 function switchTeamPopup(id) {
   document.querySelector('.team-popup' + id).classList.toggle('active')
@@ -56,3 +57,4 @@ function switchSpecPopup(id) {
   document.querySelector('.specialties-popup' + id).classList.toggle('active')
   // document.querySelectorAll('.specialties__popup').classList.toggle('active')
 };
+
