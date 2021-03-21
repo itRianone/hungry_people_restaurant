@@ -1518,3 +1518,8 @@ textarea::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 481px){
+.header__main-center__title {
+    font-size: 45px;
+  }
+}
