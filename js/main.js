@@ -13,7 +13,7 @@ $(document).ready(function () {
     {
       arrows: false,
       slidesToShow: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2500,
       dots: true,
     }
@@ -23,7 +23,7 @@ $(document).ready(function () {
       {
         slidesToShow: 1,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2500,
         dots: true,
       }
@@ -58,3 +58,23 @@ function switchSpecPopup(id) {
   // document.querySelectorAll('.specialties__popup').classList.toggle('active')
 };
 
+function switchStyle(event, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="menu__dishes" and hide them
+  tabcontent = document.getElementsByClassName("menu__dishes");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  
+  // Get all elements with class="menu__tab-item" and remove the class "active"
+  tablinks = document.getElementsByClassName("menu__tabs-wrapper");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  event.currentTarget.className += " active";
+}

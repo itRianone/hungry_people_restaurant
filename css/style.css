@@ -25,6 +25,9 @@ img{
   width: 100%;
   max-width: 475px;
 }
+section{
+  padding: 100px 0;
+}
 input{
   background: inherit;
   border-radius: 5px;
@@ -64,6 +67,15 @@ textarea::-webkit-scrollbar-thumb {
   font-style: normal;
   font-weight: normal;
   src: url('../fonts/Banny-BoldRound.woff') format('woff');
+}
+.header__section{
+  padding: 0;
+}
+.gall__section{
+  padding: 0;
+}
+.footer__section{
+  padding: 0;
 }
 .container{
   max-width: 1280px;
@@ -228,9 +240,6 @@ textarea::-webkit-scrollbar-thumb {
   box-shadow: 0 0 15px #E8C300;
   transition: all 0.15s;
 }
-.header__btn02{
-  
-}
 .header__btn02:hover{
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transition: all 0.15s;
@@ -313,10 +322,7 @@ textarea::-webkit-scrollbar-thumb {
   transition: all 0.15s ease;
   fill: #bc2a8d;
 }
-.about-section{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+
 .about-us{
   display: flex;
   align-items: center;
@@ -383,15 +389,12 @@ textarea::-webkit-scrollbar-thumb {
 .visible{
   display: block;
 }
-.our-team{
-  /* position: relative; */
-}
+
 .our-team__section{
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url('../images/team-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
   position: relative;
 }
 .team-slider__inner{
@@ -437,6 +440,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .team__popup,
 .specialties__popup{
+  padding: 15px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -458,6 +462,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .team__popup-close,
 .specialties__popup-close{
+  z-index: 2;
   cursor: pointer;
   position: absolute;
   top: 15px;
@@ -484,6 +489,7 @@ textarea::-webkit-scrollbar-thumb {
   filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
   border-radius: 5px;
 }
+
 .team__popup-title,
 .team__popup-text,
 .specialties__popup-title,
@@ -565,7 +571,6 @@ textarea::-webkit-scrollbar-thumb {
   outline: none;
 }
 .reservation__section{
-  padding: 100px 0;
   position: relative;
 }
 .reservation__inner{
@@ -585,6 +590,7 @@ textarea::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
 }
 .reservation__input-item{
+  align-items: baseline;
   flex-basis: 50%;
 }
 .reservation__title{
@@ -693,7 +699,6 @@ textarea::-webkit-scrollbar-thumb {
   background-image: url("../images/specialty's-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
   position: relative;
 }
 .specialties-slider__inner{
@@ -738,6 +743,7 @@ textarea::-webkit-scrollbar-thumb {
   margin-bottom: 15px;
 }
 .specialties__title-slider::after{
+  z-index: 2;
   position: absolute;
   content: '';
   width: 60px;
@@ -745,7 +751,7 @@ textarea::-webkit-scrollbar-thumb {
   background: #E8C300;
   border-radius: 50px;
   bottom: 0;
-  left: 35%;
+  left: 44%;
 }
 .specialties{
   font-style: normal;
@@ -913,8 +919,8 @@ textarea::-webkit-scrollbar-thumb {
 .submenu{
   display: none;
 }
-.menu__section{
-  padding: 100px 0;
+.menu__tab-item{
+  cursor: pointer;
 }
 .menu{
   display: flex;
@@ -981,7 +987,7 @@ textarea::-webkit-scrollbar-thumb {
   color: #333333;
   position: relative;
 }
-.menu__tab-item:hover{
+.menu__tabs-wrapper:hover .menu__tab-item {
   color: #E8C300;
   transition: all 0.15s ease;
 }
@@ -1005,7 +1011,6 @@ textarea::-webkit-scrollbar-thumb {
 }
 .events__section{
   position: relative;
-  padding: 100px 0;
   background-image: url('../images/events-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1087,6 +1092,7 @@ textarea::-webkit-scrollbar-thumb {
   justify-content: center;
 }
 .events__title{
+  z-index: 2;
   color: #FFFFFF;
   top: 6%;
   position: absolute;
@@ -1121,6 +1127,7 @@ textarea::-webkit-scrollbar-thumb {
   width: 100%;
   
 }
+
 .contact__title{
   font-family: 'Banny Round';
   font-size: 36px;
@@ -1151,8 +1158,6 @@ textarea::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .contact__input{
   flex-wrap: wrap;
@@ -1306,8 +1311,51 @@ textarea::-webkit-scrollbar-thumb {
 .nav__item-mobile::after{
   display: none;
 }
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
 
+/* Style the buttons that are used to open the tab content */
+.menu__tabs-wrapper{
+  background-color: inherit;
+  float: left;
+  border: none;
+  border-right: 1px solid ;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.menu__tabs-wrapper:hover {
+  background-color: #000;
+}
+.menu__tabs-wrapper:hover .menu__dishes{
+  color: #E8C300;
+}
+
+/* Create an active/current tablink class */
+.menu__tabs-wrapper.active {
+  background-color: #000;
+}
+.menu__tabs-wrapper.active .menu__tab-item{
+  color: #E8C300;
+}
+
+/* Style the tab content */
+.menu__dishes {
+  display: none;
+}
+
+.menu__tabs{
+  display: flex;
+  flex-wrap: wrap;
+}
 @media(max-width:1200px) {
+
   .our-team__text-block, .specialties__text-block{
     margin-left: 0;
   }
@@ -1431,12 +1479,85 @@ textarea::-webkit-scrollbar-thumb {
   .header__main-arrow__inner{
     margin-top: 50px;
   }
+  .reservation__btn{
+    margin-bottom: 10px;
+  }
+  .about-us__text{
+    margin-bottom: 10px;
+  }
 }
 
 @media(max-width:769px){
+  .menu__tabs-wrapper{
+    flex-basis: 50%;
+  }
+  
+  section{
+    padding: 60px 0;
+  }
+  .events{
+    padding: 10px;
+  }
+  .menu__span{
+    margin-bottom: 40px;
+  }
+  .menu__tabs{
+    margin-bottom: 25px;
+  }
+  .events__footer{
+    padding: 10px;
+  }
+  .corporate-pzrties__image-wrapper::after,
+  .weddings__image-wrapper::after,
+  .specialties__image::before, .our-team__image::before,
+  .reservation__img-inner::after,.about-us__image::before{
+    width: 150px;
+    height: 150px;
+    top: 30%;
+  }
+  .contact__span{
+    margin-bottom: 20px;
+  }
+  .gallery{
+    flex-wrap: wrap;
+  }
+  .gallery__item{
+    flex-basis: 50%;
+  }
+  .corporate-pzrties{
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .about-us__image::before,
+  .reservation__img-inner::after,
+  .corporate-pzrties__image-wrapper::after{
+    right: 5%;
+    top: 22%;
+  }
+  .weddings__image-wrapper::after,
+  .our-team__image::before, 
+  .specialties__image::before{
+    left: 5px;
+  }
+  .about-us__image,
+  .reservation__img-inner,
+  .corporate-pzrties__image-wrapper,
+  .weddings__image-wrapper,
+  .specialties__image,
+  .our-team__image{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-us__image-card,
+  .reservation__img,
+  .our-team__image-card,
+  .specialties__image-card{
+    margin: auto;
+    width: 90%;
+  }
   .facebook{
-  transition: all 0.15s ease;
-  fill: #3b5998;
+    transition: all 0.15s ease;
+    fill: #3b5998;
   }
   .twitter{
     transition: all 0.15s ease;
@@ -1447,12 +1568,12 @@ textarea::-webkit-scrollbar-thumb {
     fill: #bc2a8d;
   }
   .header__main{
-    margin-top: 35px;
+    margin-top: 45px;
   }
   .header__main-left__dates{
     width: 100%;
     transform: none;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .header__main-arrow__inner {
     margin-top: 40px;
@@ -1501,7 +1622,7 @@ textarea::-webkit-scrollbar-thumb {
     order:-1;
   }
   .header__main-center__title{
-    font-size: 56px;
+    font-size: 54px;
   }
   .header__main-center__buttons{
     flex-direction: column;
@@ -1516,10 +1637,78 @@ textarea::-webkit-scrollbar-thumb {
   .nav__item-mobile{
     display: block;
   }
+
 }
 
 @media (max-width: 481px){
-.header__main-center__title {
+  .menu__tabs-wrapper{
+    flex-basis: 33%;
+  }
+  .menu__dishes-item__title{
+    font-size: 16px;
+  }
+  .corporate-pzrties__image-wrapper::after,
+  .weddings__image-wrapper::after,
+  .specialties__image::before, .our-team__image::before,
+  .reservation__img-inner::after,.about-us__image::before{
+    width: 100px;
+    height: 100px;
+    top: 30%;
+  }
+  .reservation__img{
+    margin-bottom: 15px;
+  }
+  .reservation-date{
+    padding: 10px;
+  }
+  .header__main-center__title {
     font-size: 45px;
+  }
+  .contact__footer{
+    flex-direction: column;   
+  } 
+  .contact__btn{
+    width: 100%;
+  }
+  .contact__info-item{
+    margin-bottom: 7px;
+  }
+  .contact__input-item{
+    flex-basis: 100%;
+  }
+  .menu{
+    padding: 10px;
+  }
+  .header__main-center__title{
+    margin-top: 25px;
+    font-size: 36px;
+  }
+  .about-us__title,
+  .our-team__title-slider,
+  .reservation__title,
+  .specialties__title-slider,
+  .menu__title,
+  .contact__title{
+    font-size: 30px;
+  }
+  .menu__span,
+  .about-us__descr,
+  .contact__span{
+    font-size: 16px;
+  }
+  .reservation{
+    margin: 0;
+  }
+  .projects ul{
+    height: 150px;
+    width: 150px;
+  }
+  .nav__item-mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__item-mobile>ul{
+    right: 5px;
+    top: 40px;
   }
 }
