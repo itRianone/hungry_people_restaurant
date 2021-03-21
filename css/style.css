@@ -72,7 +72,8 @@ textarea::-webkit-scrollbar-thumb {
 .header__section{
   min-height: 800px;
   height: 100vh;
-  background-image: url('../images/header-bg.png');
+  /* background-image: url('../images/header-bg.webp'); */
+  background-image: url('../images/header-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -387,7 +388,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .our-team__section{
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url('../images/team-bg.png');
+  background-image: url('../images/team-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0;
@@ -492,6 +493,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .our-team__title-slider::after{
+  z-index: 2;
   position: absolute;
   content: '';
   width: 60px;
@@ -688,7 +690,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .specialties__section{
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url("../images/specialty's-bg.png");
+  background-image: url("../images/specialty's-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0;
@@ -1004,7 +1006,7 @@ textarea::-webkit-scrollbar-thumb {
 .events__section{
   position: relative;
   padding: 100px 0;
-  background-image: url('../images/events-bg.png');
+  background-image: url('../images/events-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
@@ -1306,6 +1308,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 @media(max-width:1200px) {
+  .our-team__text-block, .specialties__text-block{
+    margin-left: 0;
+  }
   .corporate-pzrties__image-wrapper::after,
   .weddings__image-wrapper::after,
   .specialties__image::before, .our-team__image::before,
