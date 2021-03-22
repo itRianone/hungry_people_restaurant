@@ -18,3 +18,8 @@ site gallery
 footer
 
 ![image](https://user-images.githubusercontent.com/63122696/111367476-d539e880-86a5-11eb-98e0-0df186684e43.png)
+
+mobile(samsung g730) version
+
+![image](https://user-images.githubusercontent.com/63122696/112043098-5804ec80-8b59-11eb-911b-156b871deaab.png)
+![image](https://user-images.githubusercontent.com/63122696/112043061-491e3a00-8b59-11eb-9f9a-1e3a8274ac46.png)
