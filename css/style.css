@@ -63,6 +63,7 @@ textarea::-webkit-scrollbar-thumb {
   background-color: #000; 
 }
 @font-face {
+  font-display: swap;
   font-family: 'Banny Round';
   font-style: normal;
   font-weight: normal;
@@ -1579,6 +1580,8 @@ textarea::-webkit-scrollbar-thumb {
     margin-top: 40px;
   }
   .header__nav {
+    transform: translateX(-10px);
+    transition: all .4s ease;
     background-color: #000000;
     display: flex;
     visibility: hidden;
@@ -1600,8 +1603,7 @@ textarea::-webkit-scrollbar-thumb {
     display: block;
   }
   .header__nav.toggle__class{
-    transform: translateX(-10px);
-    transition: all .4s ease;
+
     opacity: 1;
     visibility: visible;
     display: flex;
