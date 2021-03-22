@@ -1,5 +1,7 @@
 # [hungry_people_restaurant](https://itrianone.github.io/hungry_people_restaurant/)
-single page website, restaurant and food topic, only for laptops and desktops for now
+single page website, restaurant and food topic, full adaptive, GPS 91/95%
+
+![image](https://user-images.githubusercontent.com/63122696/112015099-8fb16b80-8b3c-11eb-8633-ebcba43930ac.png)
 
 header
 
