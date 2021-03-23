@@ -1126,7 +1126,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .gallery__item-qq{
   width: 100%;
-  
+  height: 100% !important;
 }
 
 .contact__title{
